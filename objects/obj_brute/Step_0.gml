@@ -1,4 +1,5 @@
 /// @description 
+event_inherited();
 
 image_index = HP -1;
 

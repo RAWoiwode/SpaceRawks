@@ -9,3 +9,4 @@ HP = 1;
 originalSpeed = speed;
 bulletCounter = 0;
 originalBulletCounter = bulletCounter;
+exhaustCounter = 0;
