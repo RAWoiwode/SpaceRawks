@@ -1,4 +1,5 @@
 /// @description Instantiate asteroids
+event_inherited(); // Still inherit what is in the parent obj
 
 sprite_index = choose(
 	spr_asteroid_small,
