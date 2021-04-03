@@ -1,5 +1,4 @@
-/// @description Insert description here
-// Inherit the parent event
+/// @description Set up Ship
 event_inherited();
 
 bulletSpeed = 6;

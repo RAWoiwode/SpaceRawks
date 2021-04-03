@@ -1,4 +1,4 @@
-/// @description 
+/// @description Check which powerup 
 
 with(other) {
 	var powerup_type = image_index;
@@ -12,6 +12,6 @@ switch(powerup_type) {
 		break;
 	default:
 		guns = powerup_type;
-		alarm[0] = 5 * room_speed;
+		alarm[0] = 7 * room_speed;
 		break;
 }

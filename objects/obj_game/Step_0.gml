@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Check key press and monitor room activity
 if(keyboard_check_pressed(vk_enter)) {
 	switch(room) {
 		case rm_start:
@@ -13,11 +13,13 @@ if(keyboard_check_pressed(vk_enter)) {
 
 if(room == rm_game) {
 	
+	// Player wins
 	if(score >= 1000) {
 		room_goto(rm_win);
 		audio_play_sound(snd_win, 1, false);
 	}
-
+	
+	// Player runs out of lives
 	if(lives <= 0) {
 		room_goto(rm_gameover);
 		audio_play_sound(snd_lose, 1, false);

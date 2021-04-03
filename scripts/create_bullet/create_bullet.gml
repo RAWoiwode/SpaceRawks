@@ -5,13 +5,18 @@
 ///@arg _gun_type
 
 function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
+	gun_type = _gun_type;
+	if(argument_count < 5) {
+		gun_type = -1
+	}
+	
 	// Choose gun type
-	switch(_gun_type) {
+	switch(gun_type) {
 		case powerups.three_bullets:
 			var inst = instance_create_layer(x, y, "Instances", obj_bullet);
 			initialize_bullet(_direction, _speed, _faction, _creator, inst);
 		case powerups.two_bullets:
-			var _sep = 12;
+			var _sep = 12; // How far to be from the ship center line
 			audio_play_sound(snd_zap, 1, false);
 			
 			var inst = instance_create_layer(

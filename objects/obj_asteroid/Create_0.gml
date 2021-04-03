@@ -1,4 +1,4 @@
-/// @description Instantiate asteroids
+/// @description Initialize asteroids
 event_inherited(); // Still inherit what is in the parent obj
 
 sprite_index = choose(
@@ -11,4 +11,3 @@ direction = irandom_range(0, 359);
 image_angle = irandom_range(0, 359);
 
 speed = 1
-

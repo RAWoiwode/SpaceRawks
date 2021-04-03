@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Initialize enemy
 event_inherited();
 
 speed = 1;

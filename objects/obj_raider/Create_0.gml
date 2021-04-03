@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Initialize Raider
 event_inherited();
 
 bulletSpeed = 4;

@@ -12,8 +12,10 @@ if(instance_exists(target)) {
 global.cameraX += random_range(-global.cameraShake, global.cameraShake);
 global.cameraY += random_range(-global.cameraShake, global.cameraShake);
 
+// Stop the camera shake
 if(global.cameraShake > 0) {
 	global.cameraShake -= 0.2;
+	// Reset to 0
 	if(global.cameraShake < 0) global.cameraShake = 0;
 }
 

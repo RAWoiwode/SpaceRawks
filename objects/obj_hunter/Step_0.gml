@@ -1,4 +1,4 @@
-/// @description 
+/// @description Hunter Logic
 event_inherited();
 
 if(!instance_exists(obj_ship)) exit;
@@ -11,11 +11,13 @@ if(point_distance(x, y, obj_ship.x, obj_ship.y) < 250) {
 	image_angle = lerp(image_angle, new_angle, 0.1);
 	direction = image_angle;
 	
+	// Slow down/reverse if close to player
 	if(point_distance(x, y, obj_ship.x, obj_ship.y) < 125) {
 		speed -= 0.05;
-	} else {
+	} else { // Catch up to player
 		speed += 0.01;
 	}
+	
 	// Fire bullet
 	bulletCounter++;
 	if(bulletCounter >= 40) {

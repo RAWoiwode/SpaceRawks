@@ -1,4 +1,4 @@
-/// @description 
+/// @description Radier logic
 event_inherited();
 
 if(!instance_exists(obj_ship)) exit;
