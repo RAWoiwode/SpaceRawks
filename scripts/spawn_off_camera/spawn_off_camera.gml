@@ -1,6 +1,6 @@
-///@description spawn_off_camera
-///@arg obj
-///@arg number
+/// @description spawn_off_camera
+/// @arg obj
+/// @arg number
 
 function spawn_off_camera(obj, number) {
 	var xx, yy;

@@ -1,17 +1,17 @@
-///@description Create Bullet
-///@arg _direction
-///@arg _speed
-///@arg _faction
-///@arg _gun_type
+/// @description Create Bullet
+/// @arg _direction
+/// @arg _speed
+/// @arg _faction
+/// @arg _creator
+/// @arg [_gun_type]
 
 function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
-	gun_type = _gun_type;
-	if(argument_count < 5) {
-		gun_type = -1
-	}
+	if 0 return argument[0]; // Get rid of warning
+	
+	if (_gun_type == undefined) _gun_type = -1;
 	
 	// Choose gun type
-	switch(gun_type) {
+	switch(_gun_type) {
 		case powerups.three_bullets:
 			var inst = instance_create_layer(x, y, "Instances", obj_bullet);
 			initialize_bullet(_direction, _speed, _faction, _creator, inst);
