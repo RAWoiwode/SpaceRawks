@@ -4,8 +4,8 @@
 global.cameraX = 0;
 global.cameraY = 0;
 target = obj_ship;
-global.cameraWidth = 512;
-global.cameraHeight = 512;
+global.cameraWidth = 480;
+global.cameraHeight = 480;
 
 view_enabled = true;
 view_visible[0] = true;
