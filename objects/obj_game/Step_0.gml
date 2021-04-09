@@ -25,3 +25,13 @@ if(room == rm_game) {
 		audio_play_sound(snd_lose, 1, false);
 	}
 }
+
+// Music Logic
+if (keyboard_check_pressed(ord("M"))) {
+	music = !music;
+	if (music) {
+		audio_resume_sound(mscBurning);
+	} else {
+		audio_pause_sound(mscBurning);
+	}
+}
