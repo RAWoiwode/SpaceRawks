@@ -1,6 +1,6 @@
 /// @description Destory asteroid logic
 score += 10;
-audio_play_sound(snd_die, 1, false);
+check_sound(snd_die, 1, false);
 var _xx = x, _yy = y;
 
 // Chance for powerup

@@ -16,13 +16,13 @@ if(room == rm_game) {
 	// Player wins
 	if(score >= 1000) {
 		room_goto(rm_win);
-		audio_play_sound(snd_win, 1, false);
+		check_sound(snd_win, 1, false);
 	}
 	
 	// Player runs out of lives
 	if(lives <= 0) {
 		room_goto(rm_gameover);
-		audio_play_sound(snd_lose, 1, false);
+		check_sound(snd_lose, 1, false);
 	}
 }
 
@@ -34,4 +34,9 @@ if (keyboard_check_pressed(ord("M"))) {
 	} else {
 		audio_pause_sound(mscBurning);
 	}
+}
+
+// SFX Logic
+if (keyboard_check_pressed(ord("S"))) {
+	global.sound = !global.sound;
 }

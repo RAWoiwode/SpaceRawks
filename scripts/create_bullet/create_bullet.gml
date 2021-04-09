@@ -17,7 +17,7 @@ function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
 			initialize_bullet(_direction, _speed, _faction, _creator, inst);
 		case powerups.two_bullets:
 			var _sep = 12; // How far to be from the ship center line
-			audio_play_sound(snd_zap, 1, false);
+			check_sound(snd_zap, 1, false);
 			
 			var inst = instance_create_layer(
 				x + lengthdir_x(_sep, _direction + 90), 
@@ -35,7 +35,7 @@ function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
 			break;
 		case powerups.four_bullets:
 			var _sep = 6, bullet_angle;
-			audio_play_sound(snd_zap, 1, false);
+			check_sound(snd_zap, 1, false);
 			for(i = 0; i < 4; i++) {
 				bullet_angle = _direction + (i * 90);
 				var inst = instance_create_layer(
@@ -48,7 +48,7 @@ function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
 			break;
 		case powerups.star_shot:
 			var _sep = 6, bullet_angle;
-			audio_play_sound(snd_zap, 1, false);
+			check_sound(snd_zap, 1, false);
 			for(i = 0; i < 8; i++) {
 				bullet_angle = _direction + (i * 45);
 				var inst = instance_create_layer(
@@ -60,12 +60,12 @@ function create_bullet(_direction, _speed, _faction, _creator, _gun_type){
 			}
 			break;
 		case powerups.laser:
-			audio_play_sound(snd_laser, 1, false);
+			check_sound(snd_laser, 1, false);
 			var inst = instance_create_layer(x, y, "Instances", obj_laser);
 			initialize_bullet(_direction, _speed, _faction, _creator, inst);
 			break;
 		default:
-			audio_play_sound(snd_zap, 1, false);
+			check_sound(snd_zap, 1, false);
 			var inst = instance_create_layer(x, y, "Instances", obj_bullet);
 			initialize_bullet(_direction, _speed, _faction, _creator, inst);
 			break;

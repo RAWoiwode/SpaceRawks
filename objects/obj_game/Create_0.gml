@@ -5,6 +5,7 @@ lives = 3;
 
 // Music
 music = 1;
+global.sound = 1;
 audio_play_sound(mscBurning, 0, 1);
 
 

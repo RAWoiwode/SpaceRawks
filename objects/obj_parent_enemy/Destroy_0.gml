@@ -1,5 +1,5 @@
 /// @description Enemy destroy logic
-audio_play_sound(snd_die, 1, false);
+check_sound(snd_die, 1, false);
 
 // Particle FX
 var _xx = x , _yy = y, _ib = image_blend;

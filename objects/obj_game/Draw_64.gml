@@ -3,11 +3,12 @@ switch(room) {
 	case rm_game:
 		draw_text(20, 20, "SCORE: " + string(score));
 		draw_text(20, 40, "LIVES: " + string(lives));
-		draw_sprite(sprMusic, music, 475, 40);
+		draw_sprite(sprMusic, music, 495, 40);
+		draw_sprite_ext(sprSound, global.sound, 495, 60, 0.5, 0.5, 0, c_white, 1);
 		break;
 	case rm_start:
-		draw_sprite(sprMusic, music, 475, 40);
-		if (!instance_exists(objMusicBtn)) instance_create_layer(400, 20, "Instances", objMusicBtn);
+		draw_sprite(sprMusic, music, 495, 40);
+		draw_sprite_ext(sprSound, global.sound, 495, 60, 0.5, 0.5, 0, c_white, 1);
 		draw_set_halign(fa_center)
 		var c = c_yellow
 		draw_text_transformed_color(
