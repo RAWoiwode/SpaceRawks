@@ -5,3 +5,4 @@ This is expanding off the GameMaker Studio 2 tutorial of [SpaceRocks](https://ww
 
 ## Notable Changes
 
+* Music toggle
