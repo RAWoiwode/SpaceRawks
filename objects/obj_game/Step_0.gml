@@ -11,12 +11,16 @@ if(keyboard_check_pressed(vk_enter)) {
 	}
 }
 
-if(room == rm_game) {
+if (room == rm_game) {
 	
 	// Player wins
 	if(score >= 1000) {
 		room_goto(rm_win);
 		check_sound(snd_win, 1, false);
+	}
+	
+	if (check_level_completed()) {
+		room = rm_game2;
 	}
 	
 	// Player runs out of lives

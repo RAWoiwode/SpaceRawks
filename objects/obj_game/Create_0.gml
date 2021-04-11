@@ -2,6 +2,16 @@
 
 score = 0;
 lives = 3;
+levelStarted = false;
+global.asteroids = 0;
+global.raiders = 0;
+global.brutes = 0;
+global.hunters = 0;
+global.destroyedAsteroids = 0;
+global.destroyedRaiders = 0;
+global.destroyedBrutes = 0;
+global.destroyedHunters = 0;
+spawnRate = 4;
 
 // Music
 musicButtonX = 465;

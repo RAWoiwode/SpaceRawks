@@ -1,14 +1,29 @@
 /// @description Scoreboard
 switch(room) {
 	case rm_game:
-		draw_text(20, 20, "SCORE: " + string(score));
-		draw_text(20, 40, "LIVES: " + string(lives));
+		draw_text(20, 10, "SCORE: " + string(score));
+		draw_text(20, 25, "LIVES: " + string(lives));
+		draw_text(20, 40, "Asteroids: " + 
+			string(global.destroyedAsteroids) + "/" + string(global.asteroids)
+		);
+		draw_text(20, 55, "Raiders: " + 
+			string(global.destroyedRaiders) + "/" + string(global.raiders)
+		);
+		draw_text(20, 70, "Brutes: " + 
+			string(global.destroyedBrutes) + "/" + string(global.brutes)
+		);
+		draw_text(20, 85, "Hunters: " + 
+			string(global.destroyedHunters) + "/" + string(global.hunters)
+		);
 		draw_sprite(sprMusic, music, musicButtonX, musicButtonY);
 		draw_sprite_ext(
 			sprSound, global.sound, 
 			soundButtonX, soundButtonY, 
 			0.5, 0.5, 0, c_white, 1
 		);
+		break;
+	case rm_game2:
+		draw_text(20, 20, "TEST: " + string(score));
 		break;
 	case rm_start:
 		draw_sprite(sprMusic, music, musicButtonX, musicButtonY);

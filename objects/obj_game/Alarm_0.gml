@@ -1,8 +1,12 @@
 /// @description Spawn asteroids
-if(room != rm_game) {
-	exit;
-}
+if(room != rm_game) exit;
 
-spawn_off_camera(obj_asteroid, 1);
+//spawn_off_camera(obj_asteroid, 1); // Keep spawning asteroids
 
-alarm[0] = 1 * room_speed;
+// Spawn asteroids and enemies
+spawn_asteroid();
+spawn_raider();
+spawn_brute();
+spawn_hunter();
+
+alarm[0] = spawnRate * room_speed;
