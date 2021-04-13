@@ -5,4 +5,14 @@ This is expanding off the GameMaker Studio 2 tutorial of [SpaceRocks](https://ww
 
 ## Notable Changes
 
-* Music toggle
+* Music and Sound toggles
+* Levels (WIP)
+
+### TODO
+
+1) Level Transitions!!!
+2) Tune enemy spawning!!
+3) Leaderboard!!
+4) Rework sprites!
+5) Rework sounds!
+6) Different powerups!
