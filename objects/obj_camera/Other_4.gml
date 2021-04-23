@@ -28,7 +28,7 @@ displayWidth = global.cameraWidth * displayScale;
 displayHeight = global.cameraHeight * displayScale;
 
 window_set_size(displayWidth, displayHeight); // Viewport
-surface_resize(application_surface, displayWidth, displayHeight);
+surface_resize(application_surface, display_get_gui_width(), display_get_gui_height());
 
 // GUI
 display_set_gui_size(global.cameraWidth, global.cameraHeight);

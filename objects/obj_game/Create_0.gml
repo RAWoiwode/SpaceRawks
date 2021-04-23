@@ -2,7 +2,10 @@
 
 score = 0;
 lives = 3;
+paused = false;
+pausedSurface = -1;
 levelStarted = false;
+
 global.asteroids = 0;
 global.raiders = 0;
 global.brutes = 0;
