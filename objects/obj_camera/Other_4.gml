@@ -28,6 +28,7 @@ displayWidth = global.cameraWidth * displayScale;
 displayHeight = global.cameraHeight * displayScale;
 
 window_set_size(displayWidth, displayHeight); // Viewport
+// Changed to display_get_gui...() so the pause menu will stay with the player more accurately
 surface_resize(application_surface, display_get_gui_width(), display_get_gui_height());
 
 // GUI

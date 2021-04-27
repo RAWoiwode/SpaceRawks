@@ -9,3 +9,7 @@ if(HP <= 0) {
 	if (object_index == obj_hunter and 
 		global.destroyedHunters != global.hunters) global.destroyedHunters++;
 }
+
+if (check_level_completed()) {
+	instance_create_layer(0, 0, "Instances", objLevelTransition);
+}

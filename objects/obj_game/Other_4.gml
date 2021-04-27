@@ -12,6 +12,5 @@ if(room == rm_game) {
 		levelStarted = true
 	}
 	
-
 	alarm[0] = 60;
 }

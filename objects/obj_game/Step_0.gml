@@ -20,7 +20,9 @@ if (room == rm_game) {
 	}
 	
 	if (check_level_completed()) {
-		room = rm_game2;
+		if (!levelComplete) {
+			levelComplete = true;
+		}
 	}
 	
 	// Player runs out of lives

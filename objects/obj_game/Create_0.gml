@@ -5,6 +5,7 @@ lives = 3;
 paused = false;
 pausedSurface = -1;
 levelStarted = false;
+levelComplete = false;
 
 global.asteroids = 0;
 global.raiders = 0;

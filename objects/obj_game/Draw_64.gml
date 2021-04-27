@@ -23,7 +23,6 @@ switch(room) {
 		);
 		
 		// Pause
-		// TODO: Debug Pause surface position
 		if (paused) {
 			if (!surface_exists(pausedSurface)) {
 				if (pausedSurface == -1) {

@@ -9,6 +9,7 @@
     {"id":{"name":"sprMusic","path":"sprites/sprMusic/sprMusic.yy",},"order":0,},
     {"id":{"name":"create_bullet","path":"scripts/create_bullet/create_bullet.yy",},"order":1,},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},"order":2,},
+    {"id":{"name":"objLevelTransition","path":"objects/objLevelTransition/objLevelTransition.yy",},"order":18,},
     {"id":{"name":"initialize_bullet","path":"scripts/initialize_bullet/initialize_bullet.yy",},"order":2,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":4,},
     {"id":{"name":"spr_asteroid_small","path":"sprites/spr_asteroid_small/spr_asteroid_small.yy",},"order":3,},
